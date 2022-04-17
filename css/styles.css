@@ -51,7 +51,7 @@ ul {
 }
 
 .adress-element + .adress-element {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .logo {
@@ -108,6 +108,13 @@ ul {
   font-style: normal;
   color: var(--main-text-color);
   text-decoration: none;
+  text-align: center;
+}
+
+.adress-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  float: left;
 }
 
 .page_nav:hover,
@@ -172,7 +179,10 @@ ul {
 .crew_list,
 .advantages,
 .examples,
-.portf-filter {
+.portf-filter,
+.crew-links,
+.client-link,
+.clients-list {
   display: flex;
   justify-content: center;
 }
@@ -193,9 +203,24 @@ ul {
   max-width: 270px;
 }
 
+.pros-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.pros-icon {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
 .pros-item + .pros-item,
 .picture-item + .picture-item,
-.crew_el:not(:first-child) {
+.crew_el:not(:first-child),
+.clients-list-el + .clients-list-el {
   margin-left: 30px;
 }
 
@@ -228,7 +253,6 @@ ul {
   color: var(--headers-color);
   text-transform: uppercase;
 }
-
 .intro-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -245,7 +269,8 @@ ul {
 }
 
 .pictures-header,
-.light-bg-header {
+.light-bg-header,
+.clients-header {
   margin-bottom: 50px;
 }
 .crew_head {
@@ -261,6 +286,33 @@ ul {
   background-color: var(--light-bg-color);
 }
 
+.crew-links {
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.follow-crew-el {
+  width: 44px;
+  height: 44px;
+}
+
+.follow-crew-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  color: #afb1b8;
+}
+
+.follow-crew-link:hover,
+.follow-crew-link:focus {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
 .crew_el {
   text-align: center;
   background-color: var(--bg-color);
@@ -270,8 +322,33 @@ ul {
 }
 
 .crew-text {
-  padding-bottom: 30px;
   padding-top: 30px;
+}
+
+.client-link {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-list-el {
+  width: 170px;
+  height: 92px;
+}
+
+.logo-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 .portf-filter {
@@ -288,11 +365,7 @@ ul {
   color: var(--headers-color);
   background-color: #f5f4fa;
   cursor: pointer;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(238, 238, 238, 1);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
   border-radius: 4px;
 }
 
@@ -305,6 +378,8 @@ ul {
 .filter_btn:focus {
   color: var(--bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples {
@@ -325,6 +400,11 @@ ul {
   margin-bottom: 0;
 }
 
+.example-el:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 .example-text {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -342,14 +422,23 @@ ul {
   background-color: var(--dark-bg-color);
 }
 
+.footer-container {
+  display: flex;
+}
+
+.adresses-section {
+  margin-right: 70px;
+}
+
 .footer-el + .footer-el {
   margin-top: 9px;
 }
 
 .adress_location {
-  display: block;
+  display: inline-block;
   padding: 0;
   color: var(--bg-color);
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -362,6 +451,49 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.follow-us-paragraf {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.follow-us-links,
+.follow-crew-links {
+  display: flex;
+}
+
+.follow-us-el:not(:last-child),
+.follow-crew-el:not(:last-child) {
+  margin-right: 10px;
+}
+
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.follow-us-el {
+  width: 44px;
+  height: 44px;
+}
+
+.follow-us-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--bg-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.follow-us-link:hover,
+.follow-us-link:focus {
+  background-color: var(--accent-color);
+}
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);

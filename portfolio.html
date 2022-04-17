@@ -41,14 +41,20 @@
         </nav>
         <ul class="adresses">
           <li class="adress-element">
-            <a class="adress_link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="adress_link" href="mailto:info@devstudio.com">
+              <svg class="adress-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope-icon"></use>
+              </svg>
+              info@devstudio.com</a
             >
             <!--змінити не можу, Prettier виправляє-->
           </li>
           <li class="adress-element">
             <a class="adress_link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              ><svg class="adress-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone-icon"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -221,32 +227,67 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="/" class="logo second_half_footer"
-          ><span class="logo first_half">Web</span>Studio</a
-        >
-        <address>
-          <ul class="footer-list">
-            <li class="footer-el">
-              <a
-                class="adress_link adress_location"
-                href="https://goo.gl/maps/9vUaXhKTsJwgG6u79"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container footer-container">
+        <div class="adresses-section">
+          <a href="/" class="logo second_half_footer"
+            ><span class="logo first_half">Web</span>Studio</a
+          >
+          <address>
+            <ul class="footer-list">
+              <li class="footer-el">
+                <a
+                  class="adress_link adress_location"
+                  href="https://goo.gl/maps/9vUaXhKTsJwgG6u79"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-el">
+                <a class="adress_link_footer" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-el">
+                <a class="adress_link_footer" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="follow-us">
+          <h3 class="intro-paragraf follow-us-paragraf">присоединяйтесь</h3>
+          <ul class="follow-us-links">
+            <li class="follow-us-el">
+              <a class="follow-us-link" href="/">
+                <svg class="instagram-icon">
+                  <use href="./images/icons.svg#icon-instagram-icon"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-el">
-              <a class="adress_link_footer" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="follow-us-el">
+              <a class="follow-us-link" href="/">
+                <svg class="twitter-icon">
+                  <use href="./images/icons.svg#icon-twitter-icon"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-el">
-              <a class="adress_link_footer" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="follow-us-el">
+              <a class="follow-us-link" href="/">
+                <svg class="facebook-icon">
+                  <use href="./images/icons.svg#icon-facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-us-el">
+              <a class="follow-us-link" href="/">
+                <svg class="linkedin-icon">
+                  <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
