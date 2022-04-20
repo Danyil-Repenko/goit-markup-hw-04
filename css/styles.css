@@ -102,6 +102,8 @@ ul {
 }
 
 .adress_link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -135,6 +137,8 @@ ul {
   max-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--dark-bg-color);
   text-align: center;
   font-family: var(--text-font-family);
@@ -145,6 +149,7 @@ ul {
     url(../images/hero-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page_header {
@@ -180,7 +185,7 @@ ul {
 .advantages,
 .examples,
 .portf-filter,
-.crew-links,
+.follow-crew-links,
 .client-link,
 .clients-list {
   display: flex;
@@ -286,9 +291,8 @@ ul {
   background-color: var(--light-bg-color);
 }
 
-.crew-links {
-  padding-top: 16px;
-  padding-bottom: 30px;
+.follow-crew-links {
+  margin-top: 16px;
 }
 
 .follow-crew-el {
@@ -323,6 +327,7 @@ ul {
 
 .crew-text {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .client-link {
@@ -400,10 +405,14 @@ ul {
   margin-bottom: 0;
 }
 
-.example-el:hover {
+.blank_link {
+  display: block;
+}
+
+.blank_link:hover,
+.blank_link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 .example-text {
   padding: 20px 24px;
@@ -424,6 +433,7 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .adresses-section {
